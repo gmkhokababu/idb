@@ -13,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     ListView listView;
     String [] list={"Dhaka","Khulna","Rajshahi","Sylet","Rangpur"};
+
+    int [] image ={}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
         listView=findViewById(R.id.mylist);
         ArrayAdapter adapter=new ArrayAdapter<>(this, com.google.android.material.R.layout.support_simple_spinner_dropdown_item,list);
         listView.setAdapter(adapter);
+
+
     }
 }

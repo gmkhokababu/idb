@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     GridView gridView;
     String [] list={"Dhaka","Khulna","Rajshahi","Sylet","Rangpur"};
     String [] images={"R.drawable."};
-    Integer [] image={R.drawable.pic2,R.drawable.img2,R.drawable.img3};
+    int [] image={R.drawable.pic2,R.drawable.img2,R.drawable.img3,R.drawable.img3,R.drawable.img2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         gridView=findViewById(R.id.mygrid);
 //        ArrayAdapter adapter=new ArrayAdapter<>(this, com.google.android.material.R.layout.support_simple_spinner_dropdown_item,list);
 //        ArrayAdapter adapter=new ArrayAdapter<>(this, com.google.android.material.R.layout.support_simple_spinner_dropdown_item,image);
-        gridView.setAdapter(new ImageAd);
+//        gridView.setAdapter(adapter);
+        CustomAdapter ca=new CustomAdapter(getApplicationContext(),image);
+        gridView.setAdapter(ca);
     }
 }
