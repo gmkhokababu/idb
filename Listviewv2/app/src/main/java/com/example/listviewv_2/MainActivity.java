@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
     String [] list={"Dhaka","Khulna","Rajshahi","Sylet","Rangpur"};
 
-    int [] image ={}
+//    int [] image ={};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

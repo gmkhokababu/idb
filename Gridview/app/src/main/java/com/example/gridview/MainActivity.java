@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     GridView gridView;
     String [] list={"Dhaka","Khulna","Rajshahi","Sylet","Rangpur"};
-    String [] images={"R.drawable."};
+
     int [] image={R.drawable.pic2,R.drawable.img2,R.drawable.img3,R.drawable.img3,R.drawable.img2};
 
     @Override
